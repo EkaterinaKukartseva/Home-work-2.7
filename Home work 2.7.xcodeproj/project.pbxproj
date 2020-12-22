@@ -16,6 +16,7 @@
 		00259E3B2591460000F5FB9F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00259E3A2591460000F5FB9F /* Person.swift */; };
 		00259E3E2591468D00F5FB9F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00259E3D2591468D00F5FB9F /* DataManager.swift */; };
 		00259E4D25914CAA00F5FB9F /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00259E4C25914CAA00F5FB9F /* PersonViewController.swift */; };
+		00259E5625928D0800F5FB9F /* PersonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00259E5525928D0800F5FB9F /* PersonListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		00259E3A2591460000F5FB9F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		00259E3D2591468D00F5FB9F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		00259E4C25914CAA00F5FB9F /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		00259E5525928D0800F5FB9F /* PersonListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				00259E4C25914CAA00F5FB9F /* PersonViewController.swift */,
 				00259E282591453B00F5FB9F /* ViewController.swift */,
+				00259E5525928D0800F5FB9F /* PersonListTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				00259E3B2591460000F5FB9F /* Person.swift in Sources */,
 				00259E4D25914CAA00F5FB9F /* PersonViewController.swift in Sources */,
 				00259E3E2591468D00F5FB9F /* DataManager.swift in Sources */,
+				00259E5625928D0800F5FB9F /* PersonListTableViewController.swift in Sources */,
 				00259E292591453B00F5FB9F /* ViewController.swift in Sources */,
 				00259E252591453B00F5FB9F /* AppDelegate.swift in Sources */,
 				00259E272591453B00F5FB9F /* SceneDelegate.swift in Sources */,
@@ -341,7 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88KRW3HF29;
 				INFOPLIST_FILE = "Home work 2.7/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88KRW3HF29;
 				INFOPLIST_FILE = "Home work 2.7/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

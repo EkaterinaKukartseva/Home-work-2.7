@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         personList = generationPersonList()
     }
     
-    func generationPersonList() -> Array<Person> {
+    private func generationPersonList() -> Array<Person> {
         var array = [Person]()
         
         let dataManager = DataManager()

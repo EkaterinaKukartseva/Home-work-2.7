@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct Person: Hashable {
+struct Person {
     let firstName: String
     let secondName: String
     let email: String
     let phone: String
+}
+
+struct ExpandedPerson {
+    let title: String
+    let array: [String]
 }

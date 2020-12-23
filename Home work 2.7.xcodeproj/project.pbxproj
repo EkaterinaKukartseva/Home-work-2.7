@@ -17,6 +17,7 @@
 		00259E3E2591468D00F5FB9F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00259E3D2591468D00F5FB9F /* DataManager.swift */; };
 		00259E4D25914CAA00F5FB9F /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00259E4C25914CAA00F5FB9F /* PersonViewController.swift */; };
 		00259E5625928D0800F5FB9F /* PersonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00259E5525928D0800F5FB9F /* PersonListTableViewController.swift */; };
+		00259E5C25932DA800F5FB9F /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00259E5B25932DA800F5FB9F /* PersonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		00259E3D2591468D00F5FB9F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		00259E4C25914CAA00F5FB9F /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		00259E5525928D0800F5FB9F /* PersonListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListTableViewController.swift; sourceTree = "<group>"; };
+		00259E5B25932DA800F5FB9F /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				00259E4C25914CAA00F5FB9F /* PersonViewController.swift */,
 				00259E282591453B00F5FB9F /* ViewController.swift */,
 				00259E5525928D0800F5FB9F /* PersonListTableViewController.swift */,
+				00259E5B25932DA800F5FB9F /* PersonTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				00259E5625928D0800F5FB9F /* PersonListTableViewController.swift in Sources */,
 				00259E292591453B00F5FB9F /* ViewController.swift in Sources */,
 				00259E252591453B00F5FB9F /* AppDelegate.swift in Sources */,
+				00259E5C25932DA800F5FB9F /* PersonTableViewCell.swift in Sources */,
 				00259E272591453B00F5FB9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

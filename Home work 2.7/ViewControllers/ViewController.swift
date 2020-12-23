@@ -48,7 +48,6 @@ class ViewController: UIViewController {
             personVC.person = personList[indexPath.row]
         }
     }
-    
 
 }
 
@@ -59,14 +58,17 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! PersonTableViewCell
         let person = personList[indexPath.row]
         
-        cell.textLabel?.text = person.firstName + " " + person.secondName
+        cell.setConfiguration(model: person)
         
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
 }
 

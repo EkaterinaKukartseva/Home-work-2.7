@@ -11,7 +11,7 @@ class PersonListTableViewController: UITableViewController {
     
     var expandedPersonList = [ExpandedPerson]()
     let identifier = "PersonCell"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,9 +20,11 @@ class PersonListTableViewController: UITableViewController {
     }
     
     private func getPersonList() -> Array<Person> {
-        let personList = [Person]()
         
-        guard let navigationVC = tabBarController?.viewControllers?.first as? UINavigationController, let viewController = navigationVC.topViewController as? ViewController else {
+        guard let navigationVC = tabBarController?.viewControllers?.first as? UINavigationController,
+              let viewController = navigationVC.topViewController as? ViewController
+        else {
+            let personList = [Person]()
             return personList
         }
         return viewController.personList
@@ -40,13 +42,13 @@ class PersonListTableViewController: UITableViewController {
         
         return array
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return expandedPersonList.count
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return expandedPersonList[section].array.count
     }
@@ -60,7 +62,8 @@ class PersonListTableViewController: UITableViewController {
         } else {
             cell.imageView?.image = UIImage(systemName: "envelope")
         }
-
+        
+        cell.backgroundColor = UIColor(red: 255/255, green: 253/255, blue: 208/255, alpha: 1)
         return cell
     }
     
@@ -68,4 +71,19 @@ class PersonListTableViewController: UITableViewController {
         expandedPersonList[section].title
     }
     
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if let headerView = view as? UITableViewHeaderFooterView {
+            headerView.contentView.backgroundColor = .brown
+            headerView.textLabel?.textColor = .white
+            headerView.textLabel?.font = UIFont(name: "Snell Roundhand", size: 30)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        50
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
